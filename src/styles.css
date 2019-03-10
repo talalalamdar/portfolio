@@ -1,0 +1,120 @@
+body {
+    font-size: 20px;
+    letter-spacing: 0.8px;
+}
+
+.main-page {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.sidebar {
+    float: left;
+    background-color: #2496f4;
+    width: 25%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 4px;
+    color: white;
+}
+
+.pic-container {
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#personal-details {
+    margin-top: 30px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    position: absolute;
+    height: 97%;
+    width: 97%;
+    top: 2;
+    left: 2;
+}
+
+.editorial-div {
+    height: 400px;
+}
+
+.details-div {
+    width: 50%;
+    text-align: left;
+}
+
+.details-section {
+    padding-left: 20px;
+}
+
+.date-indicator {
+    float: left;
+    width: 20%;
+}
+
+.main-details {
+    float: right;
+    width: 80%;
+}
+
+.details-header {
+    font-weight: 550;
+    color: #2496f4;
+}
+
+.active {
+    background-color: white;
+    width: 100% !important;
+    color: #2496f4 !important;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.content-item {
+    width: 100%;
+    text-decoration: none;
+}
+
+.scrollactive-item {
+    text-decoration: none;
+    width: 100%;
+    color: white;
+    line-height: 1.9;
+}
+
+.social-media-logo {
+    margin-top: 25px;
+    margin-right: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.social-media-logo:hover {
+    opacity: 1;
+}
+
+@media screen and (min-width: 1050px) {
+    .sidebar {
+        width: 15%;
+    }
+}
+
+.details-paragraph {
+    font-size: 18px;
+}

@@ -1,0 +1,126 @@
+{
+    "personalDetails": {
+        "fullName": "Talal Alamdar",
+        "email": "talalalamdar@gmail.com",
+        "phone": "+31624838866",
+        "profilePic": "../assets/profilePic.png",
+        "position": "Junior Front End Developer",
+        "street": "Kloekhorststraat 32",
+        "postCode": "1104MT Amsterdam",
+        "linkedIn": {
+            "icon": "../assets/Linkedin.png",
+            "href": "https://www.linkedin.com/in/talal-alamdar-391204162/"
+        },
+        "github": {
+            "icon": "../assets/GitHub-Mark.png",
+            "href": "https://www.github.com/talalalamdar"
+        }
+    },
+    "summary": "I am a Junior Web Developer, looking forward to gaining more experience and build my career in this field. I function very well within a team and am ready to take on responsibilities to improve my skills and add value to your organization.",
+    "education": {
+        "hackYourFuture": {
+            "startDate": "2017",
+            "endDate": "2018",
+            "title": "Hack Your Future – Programming school",
+            "subTitle": "(HTML, CSS, JavaScript, NodeJs, MySQL, React)",
+            "details": "HackYourFuture is a coding school that gives refugees the opportunity to build and improve their programming skills. Over the course of six months, professional developers teach HTML, CSS, JS, Node, React.js, and MySQL. In addition, problem-solving skills and teamwork are emphasized throughout the curriculum. In the last six weeks, students build a final project to put into practice what they have learned. Project: Hyfer"
+        },
+        "economics": {
+            "startDate": "2009",
+            "endDate": "2013",
+            "title": "University of Aleppo - Economics",
+            "subTitle": "Accounting and Banking"
+        }
+    },
+    "experiences": {
+        "Ilumy": {
+            "startDate": "2018",
+            "endDate": "N/A",
+            "title": "Ilumy - Amsterdam",
+            "subTitle": "Junior Front End Developer",
+            "details": "Ilumy is a company located in the central of Amsterdam, it mainly prototypes new features for different clients. One of the most successful products we have, is Plek, Plek is platform to organize teams, departments within a company and organizations (digital workspace for teams), as a Junior Front-End Developer, I got to work mainly for Plek, I got different responsibilities, like maintaining the platform, designing multiple parts of it, fixing different kind of bugs, code reviews, problem-solving, converting some old code from AngularJs to ReactJs, creating tools that enhance how users see and interact with the app in any browser, as well as implementing new features for the app."
+        },
+        "artIstanbul": {
+            "startDate": "2013",
+            "endDate": "2015",
+            "title": "Art Istanbul - Istanbul",
+            "subTitle": "Waiter",
+            "details": "As a full-time employee, I was responsible for some cooking in the kitchen, serving the customers, as well as preparing drinks behind the bar."
+        },
+        "terranova": {
+            "startDate": "2010",
+            "endDate": "2013",
+            "title": "Terranova - Aleppo",
+            "subTitle": "Salesman",
+            "details": "As a full-time employee, I was responsible for serving clients, managing the inventory as well as promotion of our products."
+        },
+        "gamingStore": {
+            "startDate": "2009",
+            "endDate": "2010",
+            "title": "Internet and gaming store – Aleppo",
+            "subTitle": "Supervisor",
+            "details": "As a part-time employee, I was responsible for organizing the store and clean it up, helping clients if they need any help, and assisting in financial management."
+        }
+    },
+    "languages": {
+        "turkish" : {
+            "name": "Turkish",
+            "level": "Elementary"
+        },
+        "dutch": {
+            "name": "Dutch",
+            "level": "Good"
+        },
+        "english": {
+            "name": "English",
+            "level": "Advanced"
+        },
+        "arabic": {
+            "name": "Arabic",
+            "level": "Native"
+        }
+    },
+    "technicalSkills": [
+        "Good programming skills in: HTML, CSS, and  JavaScript.",
+        "React.js, AngularJS , React Native, Redux, Mobx, Typescript and Vue.js.",
+        "Node.Js, MySQL, MongoDB, Mongoose, Express.js, and Git Commands.",
+        "A good understanding of Scrum and Agile methodology.",
+        "good Experience with debugging tools."
+    ],
+    "sections": [
+        "Personal Details",
+        "Summary",
+        "Education",
+        "Experiences",
+        "Languages",
+        "Technical Skills",
+        "Projects"
+    ],
+    "projects": {
+        "hyfer": {
+            "name": "Hyfer",
+            "description": "Hyfer is an application where all HackYourFuture students can follow their course schedule and find an overview of their homework. It also provides insight for teachers, to verify which modules are taught. Finally, students can receive their train tickets and submit a P2P review of their classmates’ homework. Hyfer is built using [React.js, JavaScript, HTML, CSS, MySQL and NodeJs].",
+            "link": "https://github.com/HackYourFuture/hyfer"
+        },
+        "calendar": {
+            "name": "Calendar",
+            "description": "Calendar built using ReactJs, moment.js (Adding , edit, and remove tasks)",
+            "link": "https://github.com/talalalamdar/calendar-react"
+        },
+        "meetingsApp": {
+            "name": "Meetings App",
+            "description": "Meetings app using ReactJs, NodeJs, MongoDb, Mongoose, Express,and Typescript.",
+            "link": "https://github.com/talalalamdar/meetings-app"
+        },
+        "booksApp": {
+            "name": "Books App",
+            "description": "Books App, made using ReactJs, Redux, React-router, and Restful api fetching data from Google Books api: The ability to search books from Google Books api. Mark books. Preview books,",
+            "link": "https://github.com/talalalamdar/books-app"
+        },
+        "portfolio": {
+            "name": "Portfolio",
+            "description": "Is built using: VueJs, animate.css",
+            "link": ""
+        }
+    }
+}
