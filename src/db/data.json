@@ -120,7 +120,7 @@
         "portfolio": {
             "name": "Portfolio",
             "description": "Is built using: VueJs, animate.css",
-            "link": ""
+            "link": "https://github.com/talalalamdar/portfolio"
         }
     }
 }
