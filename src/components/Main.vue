@@ -6,7 +6,7 @@
         <eva-icon
           style="float: right; cursor: pointer; animation-delay: 1s"
           v-animate-css="'bounceInRight'"
-          name="printer"
+          name="printer-outline"
           width="18px"
           title="Print"
           height="18px"
@@ -40,25 +40,6 @@
         <p>{{data.summary}}</p>
       </section>
       <section
-        id="education"
-        v-animate-css="'bounceInRight'"
-        style="animation-delay: 1.8s"
-        class="details-section"
-      >
-        <span class="details-header">Education</span>
-        <br>
-        <div style="padding: 20px; display: flex" v-for="(study, key) in data.education" :key="key">
-          <div class="date-indicator">{{study.startDate}} - {{study.endDate}}</div>
-          <div class="main-details">
-            <span>{{study.title}}</span>
-            <br>
-            <span>{{study.subTitle}}</span>
-            <br>
-            <p class="details-paragraph">{{study.details}}</p>
-          </div>
-        </div>
-      </section>
-      <section
         id="experiences"
         v-animate-css="'bounceInRight'"
         style="animation-delay: 2.2s"
@@ -74,6 +55,25 @@
             <span>{{job.subTitle}}</span>
             <br>
             <p class="details-paragraph">{{job.details}}</p>
+          </div>
+        </div>
+      </section>
+       <section
+        id="education"
+        v-animate-css="'bounceInRight'"
+        style="animation-delay: 1.8s"
+        class="details-section"
+      >
+        <span class="details-header">Education</span>
+        <br>
+        <div style="padding: 20px; display: flex" v-for="(study, key) in data.education" :key="key">
+          <div class="date-indicator">{{study.startDate}} - {{study.endDate}}</div>
+          <div class="main-details">
+            <span>{{study.title}}</span>
+            <br>
+            <span>{{study.subTitle}}</span>
+            <br>
+            <p class="details-paragraph">{{study.details}}</p>
           </div>
         </div>
       </section>
@@ -106,9 +106,6 @@
         <ul style="line-height: 1.9">
           <li v-for="skill in data.technicalSkills" :key="skill">{{skill}}</li>
         </ul>
-        <!-- <font-awesome-icon icon="faJs" size="xs"></font-awesome-icon>
-        <i class="faJs"></i>
-        <i class="fab fa-js-square"></i>-->
       </section>
       <section
         id="projects"
