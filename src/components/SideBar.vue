@@ -13,12 +13,19 @@
         <span style="font-weight: bold">{{data.personalDetails.fullName}}</span>
         <br>
         <span style="font-size: 14px">{{data.personalDetails.position}}</span>
+        <span style="display: block; font-size: 11px;">
+          <img src="../assets/location.png" style="margin-top: 10px;" width="15" height="15">
+          <span> {{data.personalDetails.location}}</span>
+        </span>
         <div style=" display: flex; justify-content: center">
           <a :href="data.personalDetails.linkedIn.href">
             <img class="social-media-logo" src="../assets/Linkedin.png" width="28" height="28">
           </a>
           <a :href="data.personalDetails.github.href">
             <img class="social-media-logo" src="../assets/GitHub-Mark.png" width="28" height="28">
+          </a>
+          <a href="javascript:void(0)" @click="sendEmail()">
+            <img class="social-media-logo" src="../assets/email.png" width="28" height="28">
           </a>
         </div>
       </div>
@@ -48,6 +55,9 @@ export default {
         .toLowerCase()
         .split(" ")
         .join("-")}`;
+    },
+    sendEmail: function() {
+      window.open("mailto:talalalamdar@gmail.com");
     }
   }
 };

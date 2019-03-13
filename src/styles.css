@@ -123,12 +123,12 @@ body {
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
-    border: 1px solid lightgray;
+    border: 2px solid #2496f4;
     border-radius: 50%;
 }
 
 .scroll-top-div:hover {
-    box-shadow: 0 8px 6px -6px lightgray;
+    box-shadow: 0 8px 6px -6px #2496f4;
 }
 
 @media print {
