@@ -136,3 +136,26 @@ body {
 .scroll-top-div:hover {
     box-shadow: 0 8px 6px -6px lightgray;
 }
+
+@media print {
+    .main-page {
+        display: block;
+    }
+    .sidebar {
+        display: block;
+        width: 100%;
+    }
+    .tools-bar {
+        display: none;
+    }
+    .scroll-top-div {
+        display: none;
+    }
+    .details-div {
+        width: 100%;
+        display: block;
+    }
+    .scroll-spy-div {
+        display: none;
+    }    
+}

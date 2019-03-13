@@ -2,6 +2,19 @@
   <div class="main-page">
     <SideBar :data="data"/>
     <div class="details-div">
+      <div class="tools-bar" style="width: 100%;margin-top: 20px">
+        <eva-icon
+          style="float: right; cursor: pointer; animation-delay: 1s"
+          v-animate-css="'bounceInRight'"
+          name="printer"
+          width="18px"
+          title="Print"
+          height="18px"
+          @click="printPage()"
+          animation="pulse"
+          fill="#2496f4"
+        ></eva-icon>
+      </div>
       <section
         id="personal-details"
         v-animate-css="'bounceInRight'"
@@ -112,14 +125,8 @@
         </ul>
       </section>
     </div>
-    <div   @click="handleScrollTop()" class="scroll-top-div">
-      <eva-icon
-        name="arrowhead-up"
-        width="30px"
-        height="30px"
-        animation="pulse"
-        fill="#2496f4"
-      ></eva-icon>
+    <div @click="handleScrollTop()" class="scroll-top-div">
+      <eva-icon name="arrowhead-up" width="30px" height="30px" animation="pulse" fill="#2496f4"></eva-icon>
     </div>
   </div>
 </template>
@@ -140,6 +147,9 @@ export default {
     },
     handleScrollTop() {
       window.location.href = "#top";
+    },
+    printPage() {
+      window.print()
     }
   }
 };
