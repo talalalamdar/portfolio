@@ -4,7 +4,7 @@
     <div class="details-div">
       <div class="tools-bar" style="width: 100%;margin-top: 20px">
         <eva-icon
-          style="float: right; cursor: pointer; animation-delay: 1s"
+          style="float: right; cursor: pointer; animation-delay: 0.8s"
           v-animate-css="'bounceInRight'"
           name="printer-outline"
           width="18px"
@@ -18,7 +18,7 @@
       <section
         id="personal-details"
         v-animate-css="'bounceInRight'"
-        style="animation-delay: 1s"
+        style="animation-delay: 0.8s"
         class="details-section"
       >
         <span class="details-header">Personal Details</span>
@@ -33,16 +33,16 @@
       <section
         id="summary"
         v-animate-css="'bounceInRight'"
-        style="animation-delay: 1.4s"
+        style="animation-delay: 1s"
         class="details-section"
       >
         <span class="details-header">Summary</span>
-        <p>{{data.summary}}</p>
+        <p style="margin-left: 30px;">{{data.summary}}</p>
       </section>
       <section
         id="experiences"
         v-animate-css="'bounceInRight'"
-        style="animation-delay: 2.2s"
+        style="animation-delay: 1.3s"
         class="details-section"
       >
         <span class="details-header">Experiences</span>
@@ -54,14 +54,17 @@
             <br>
             <span>{{job.subTitle}}</span>
             <br>
-            <p class="details-paragraph">{{job.details}}</p>
+            <p class="details-paragraph" v-if="job.details.length > 0">{{job.details}}</p>
+            <ul>
+              <li class="details-paragraph" v-for="task in job.tasks" :key="task">{{task}}.</li>
+            </ul>
           </div>
         </div>
       </section>
        <section
         id="education"
         v-animate-css="'bounceInRight'"
-        style="animation-delay: 1.8s"
+        style="animation-delay: 1.6s"
         class="details-section"
       >
         <span class="details-header">Education</span>
@@ -80,11 +83,11 @@
       <section
         id="languages"
         v-animate-css="'bounceInRight'"
-        style="animation-delay: 2.6s"
+        style="animation-delay: 1.9s"
         class="details-section"
       >
         <span class="details-header">Languages</span>
-        <table style="width: 100%">
+        <table style="width: 100%; margin-left: 30px;" >
           <tr>
             <th></th>
             <th>Level</th>
@@ -99,7 +102,7 @@
       <section
         id="technical-skills"
         v-animate-css="'bounceInRight'"
-        style="animation-delay: 3s"
+        style="animation-delay: 2.2s"
         class="details-section"
       >
         <span class="details-header">Technical Skills</span>
@@ -110,7 +113,7 @@
       <section
         id="projects"
         v-animate-css="'bounceInRight'"
-        style="animation-delay: 3.3s"
+        style="animation-delay: 2.5s"
         class="details-section"
       >
         <span class="details-header">Projects</span>

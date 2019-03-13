@@ -2,7 +2,7 @@
     "personalDetails": {
         "fullName": "Talal Alamdar",
         "email": "talalalamdar@gmail.com",
-        "phone": "+31624838866",
+        "phone": "+31-624-838866",
         "profilePic": "../assets/profilePic.png",
         "position": "Junior Front End Developer",
         "street": "Kloekhorststraat 32",
@@ -16,7 +16,7 @@
             "href": "https://www.github.com/talalalamdar"
         }
     },
-    "summary": "I am a Junior Web Developer, looking forward to gaining more experience and build my career in this field. I function very well within a team and am ready to take on responsibilities to improve my skills and add value to your organization.",
+    "summary": "I am a Junior Web Developer, looking forward to gain more experience and continue building my career in this field. I am very eager to learn, ready to take on responsibilities to improve my skills and add value to your organization. In addition, I function very well within a team and I can also execute tasks on an individual basis when needed. ",
     "education": {
         "hackYourFuture": {
             "startDate": "2017",
@@ -38,28 +38,53 @@
             "endDate": "2019",
             "title": "Ilumy - Amsterdam",
             "subTitle": "Junior Front End Developer",
-            "details": "Ilumy is a company located in the central of Amsterdam, it mainly prototypes new features for different clients. One of the most successful products we have, is Plek, Plek is platform to organize teams, departments within a company and organizations (digital workspace for teams), as a Junior Front-End Developer, I got to work mainly for Plek, I got different responsibilities, like maintaining the platform, designing multiple parts of it, fixing different kind of bugs, code reviews, problem-solving, converting some old code from AngularJs to ReactJs, creating tools that enhance how users see and interact with the app in any browser, as well as implementing new features for the app."
+            "tasks": [
+                "Implementing fully new features for the app",
+                "Converting some old code components from AngularJs to ReactJs",
+                "Maintaining the platform",
+                "Designing multiple parts of it",
+                "Fixing different kind of bugs",
+                "Code reviews",
+                "Creating tools that enhance how users see and interact with the app in any browser",
+                "Problem-solving"
+            ],
+            "details": "Ilumy is a company located in the central of Amsterdam, it mainly prototypes new features for different clients. One of the most successful products we have, is Plek, Plek is platform to organize teams, departments within a company and organizations (digital workspace for teams), as a Junior Front-End Developer, I got to work mainly for Plek, I got different responsibilities, Such as: "
         },
         "artIstanbul": {
             "startDate": "2013",
             "endDate": "2015",
             "title": "Art Istanbul - Istanbul",
             "subTitle": "Waiter",
-            "details": "As a full-time employee, I was responsible for some cooking in the kitchen, serving the customers, as well as preparing drinks behind the bar."
+            "tasks": [
+                "Preparing various drinks behind the bar",
+                "Serving the customers",
+                "Cooking in the kitchen"
+            ],
+            "details": ""
         },
         "terranova": {
             "startDate": "2010",
             "endDate": "2013",
             "title": "Terranova - Aleppo",
             "subTitle": "Salesman",
-            "details": "As a full-time employee, I was responsible for serving clients, managing the inventory as well as promotion of our products."
+            "tasks": [
+                "Serving clients",
+                "Managing the inventory",
+                "Managing the promotion of products"
+            ],
+            "details": ""
         },
         "gamingStore": {
             "startDate": "2009",
             "endDate": "2010",
             "title": "Internet and gaming store – Aleppo",
             "subTitle": "Supervisor",
-            "details": "As a part-time employee, I was responsible for organizing the store and clean it up, helping clients if they need any help, and assisting in financial management."
+            "tasks": [
+                "Financial assistance",
+                "Helping clients if needed",
+                "Organizing the store and cleaning it up"
+            ],
+            "details": ""
         }
     },
     "languages": {
@@ -69,7 +94,7 @@
         },
         "dutch": {
             "name": "Dutch",
-            "level": "Good"
+            "level": "Intermediate"
         },
         "english": {
             "name": "English",
