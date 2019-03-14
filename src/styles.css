@@ -260,7 +260,8 @@ body {
         display: none;
     }
     .editorial-help-block {
-        display: none;
+        width: 100%;
+        text-align: center;
     }
     .editorial-text {
         font-size: 20px;
