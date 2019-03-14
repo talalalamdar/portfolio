@@ -1,132 +1,160 @@
 <template>
-  <div class="main-page">
-    <SideBar :data="data"/>
-    <div class="details-div">
-      <div class="tools-bar" style="width: 100%;margin-top: 20px">
-        <eva-icon
-          style="float: right; cursor: pointer; animation-delay: 0.8s"
+  <div>
+    <div class="main-page" v-if="!editorialStatus">
+      <SideBar :data="data"/>
+      <div class="details-div">
+        <div class="tools-bar" style="width: 100%;margin-top: 20px">
+          <eva-icon
+            style="float: right; cursor: pointer; animation-delay: 0.8s"
+            v-animate-css="'bounceInRight'"
+            name="printer-outline"
+            width="18px"
+            title="Print"
+            height="18px"
+            @click="printPage()"
+            animation="pulse"
+            fill="#2496f4"
+          ></eva-icon>
+        </div>
+        <section
+          id="personal-details"
           v-animate-css="'bounceInRight'"
-          name="printer-outline"
-          width="18px"
-          title="Print"
-          height="18px"
-          @click="printPage()"
-          animation="pulse"
-          fill="#2496f4"
-        ></eva-icon>
+          style="animation-delay: 0.8s"
+          class="details-section"
+        >
+          <span class="details-header">Personal Details</span>
+          <ul style="list-style: none; line-height: 1.5">
+            <li>{{data.personalDetails.fullName}}</li>
+            <li>{{data.personalDetails.email}}</li>
+            <li>{{data.personalDetails.phone}}</li>
+            <li>{{data.personalDetails.street}}</li>
+            <li>{{data.personalDetails.postCode}}</li>
+          </ul>
+        </section>
+        <section
+          id="summary"
+          v-animate-css="'bounceInRight'"
+          style="animation-delay: 1s"
+          class="details-section"
+        >
+          <span class="details-header">Summary</span>
+          <p style="margin-left: 30px;">{{data.summary}}</p>
+        </section>
+        <section
+          id="experiences"
+          v-animate-css="'bounceInRight'"
+          style="animation-delay: 1.3s"
+          class="details-section"
+        >
+          <span class="details-header">Experiences</span>
+          <br>
+          <div
+            style="padding: 20px; display: flex"
+            v-for="(job, key) in data.experiences"
+            :key="key"
+          >
+            <div class="date-indicator">{{job.startDate}} - {{job.endDate}}</div>
+            <div class="main-details">
+              <span>{{job.title}}</span>
+              <br>
+              <span>{{job.subTitle}}</span>
+              <br>
+              <p class="details-paragraph" v-if="job.details.length > 0">{{job.details}}</p>
+              <ul>
+                <li class="details-paragraph" v-for="task in job.tasks" :key="task">{{task}}.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section
+          id="education"
+          v-animate-css="'bounceInRight'"
+          style="animation-delay: 1.6s"
+          class="details-section"
+        >
+          <span class="details-header">Education</span>
+          <br>
+          <div
+            style="padding: 20px; display: flex"
+            v-for="(study, key) in data.education"
+            :key="key"
+          >
+            <div class="date-indicator">{{study.startDate}} - {{study.endDate}}</div>
+            <div class="main-details">
+              <span>{{study.title}}</span>
+              <br>
+              <span>{{study.subTitle}}</span>
+              <br>
+              <p class="details-paragraph">{{study.details}}</p>
+            </div>
+          </div>
+        </section>
+        <section
+          id="languages"
+          v-animate-css="'bounceInRight'"
+          style="animation-delay: 1.9s"
+          class="details-section"
+        >
+          <span class="details-header">Languages</span>
+          <table style="width: 100%; margin-left: 30px;">
+            <tr>
+              <th></th>
+              <th>Level</th>
+            </tr>
+            <tr v-for="lang in data.languages" :key="lang.name">
+              <td>{{lang.name}}</td>
+              <td>{{lang.level}}</td>
+            </tr>
+          </table>
+          <br>
+        </section>
+        <section
+          id="technical-skills"
+          v-animate-css="'bounceInRight'"
+          style="animation-delay: 2.2s"
+          class="details-section"
+        >
+          <span class="details-header">Technical Skills</span>
+          <ul style="line-height: 1.9">
+            <li v-for="skill in data.technicalSkills" :key="skill">{{skill}}</li>
+          </ul>
+        </section>
+        <section
+          id="projects"
+          v-animate-css="'bounceInRight'"
+          style="animation-delay: 2.5s"
+          class="details-section"
+        >
+          <span class="details-header">Projects</span>
+          <ul>
+            <li v-for="project in data.projects" :key="project.name">
+              <a style="font-size: 18px;" :href="project.link">{{project.name}}</a>
+              <p class="details-paragraph">{{project.description}}</p>
+            </li>
+          </ul>
+        </section>
       </div>
-      <section
-        id="personal-details"
-        v-animate-css="'bounceInRight'"
-        style="animation-delay: 0.8s"
-        class="details-section"
-      >
-        <span class="details-header">Personal Details</span>
-        <ul style="list-style: none; line-height: 1.5">
-          <li>{{data.personalDetails.fullName}}</li>
-          <li>{{data.personalDetails.email}}</li>
-          <li>{{data.personalDetails.phone}}</li>
-          <li>{{data.personalDetails.street}}</li>
-          <li>{{data.personalDetails.postCode}}</li>
-        </ul>
-      </section>
-      <section
-        id="summary"
-        v-animate-css="'bounceInRight'"
-        style="animation-delay: 1s"
-        class="details-section"
-      >
-        <span class="details-header">Summary</span>
-        <p style="margin-left: 30px;">{{data.summary}}</p>
-      </section>
-      <section
-        id="experiences"
-        v-animate-css="'bounceInRight'"
-        style="animation-delay: 1.3s"
-        class="details-section"
-      >
-        <span class="details-header">Experiences</span>
-        <br>
-        <div style="padding: 20px; display: flex" v-for="(job, key) in data.experiences" :key="key">
-          <div class="date-indicator">{{job.startDate}} - {{job.endDate}}</div>
-          <div class="main-details">
-            <span>{{job.title}}</span>
-            <br>
-            <span>{{job.subTitle}}</span>
-            <br>
-            <p class="details-paragraph" v-if="job.details.length > 0">{{job.details}}</p>
-            <ul>
-              <li class="details-paragraph" v-for="task in job.tasks" :key="task">{{task}}.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-       <section
-        id="education"
-        v-animate-css="'bounceInRight'"
-        style="animation-delay: 1.6s"
-        class="details-section"
-      >
-        <span class="details-header">Education</span>
-        <br>
-        <div style="padding: 20px; display: flex" v-for="(study, key) in data.education" :key="key">
-          <div class="date-indicator">{{study.startDate}} - {{study.endDate}}</div>
-          <div class="main-details">
-            <span>{{study.title}}</span>
-            <br>
-            <span>{{study.subTitle}}</span>
-            <br>
-            <p class="details-paragraph">{{study.details}}</p>
-          </div>
-        </div>
-      </section>
-      <section
-        id="languages"
-        v-animate-css="'bounceInRight'"
-        style="animation-delay: 1.9s"
-        class="details-section"
-      >
-        <span class="details-header">Languages</span>
-        <table style="width: 100%; margin-left: 30px;" >
-          <tr>
-            <th></th>
-            <th>Level</th>
-          </tr>
-          <tr v-for="lang in data.languages" :key="lang.name">
-            <td>{{lang.name}}</td>
-            <td>{{lang.level}}</td>
-          </tr>
-        </table>
-        <br>
-      </section>
-      <section
-        id="technical-skills"
-        v-animate-css="'bounceInRight'"
-        style="animation-delay: 2.2s"
-        class="details-section"
-      >
-        <span class="details-header">Technical Skills</span>
-        <ul style="line-height: 1.9">
-          <li v-for="skill in data.technicalSkills" :key="skill">{{skill}}</li>
-        </ul>
-      </section>
-      <section
-        id="projects"
-        v-animate-css="'bounceInRight'"
-        style="animation-delay: 2.5s"
-        class="details-section"
-      >
-        <span class="details-header">Projects</span>
-        <ul>
-          <li v-for="project in data.projects" :key="project.name">
-            <a style="font-size: 18px;" :href="project.link">{{project.name}}</a>
-            <p class="details-paragraph">{{project.description}}</p>
-          </li>
-        </ul>
-      </section>
+      <div @click="handleScrollTop()" class="scroll-top-div">
+        <eva-icon name="arrowhead-up" width="30px" height="30px" animation="pulse" fill="#2496f4"></eva-icon>
+      </div>
     </div>
-    <div @click="handleScrollTop()" class="scroll-top-div">
-      <eva-icon name="arrowhead-up" width="30px" height="30px" animation="pulse" fill="#2496f4"></eva-icon>
+    <div
+      id="editorial-div"
+      class="editorial-div"
+      v-animate-css="'slideInDown'"
+      v-animate-css.click="'slideOutUp'"
+      style="animation-duration: 0.7s"
+      v-cloak
+      @click="handleEditorailClick()"
+      v-show="editorialStatus"
+    >
+      <img class="editorial-img" src="../assets/editorial.png" alt="editorialDiv">
+      <div class="editorial-block">
+        <div style="font-size: 50px">“Hi! I'm Talal, Front End Developer.
+          <br>Please feel free to contact me 😊”
+        </div>
+      </div>
+      <span class="editorial-help-block">Click anywhere to continue</span>
     </div>
   </div>
 </template>
@@ -141,6 +169,11 @@ export default {
     SideBar
   },
   props: ["data"],
+  data() {
+    return {
+      editorialStatus: true
+    };
+  },
   methods: {
     onSectionIntersecting(event, currentItem, lastActiveItem) {
       /// logic
@@ -149,8 +182,20 @@ export default {
       window.location.href = "#top";
     },
     printPage() {
-      window.print()
+      window.print();
+    },
+    handleEditorailClick: function() {
+      setTimeout(() => {
+        this.editorialStatus = false;
+        document.location.href = "#top";
+      }, 700);
     }
   }
 };
 </script>
+
+<style>
+[v-cloak] {
+  display: none;
+}
+</style>
