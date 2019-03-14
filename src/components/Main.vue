@@ -150,7 +150,7 @@
     >
       <img class="editorial-img" src="../assets/editorial.png" alt="editorialDiv">
       <div class="editorial-block">
-        <div style="font-size: 50px">“Hi! I'm Talal, Front End Developer.
+        <div class="editorial-text">“Hi! I'm Talal, Front End Developer.
           <br>Please feel free to contact me 😊”
         </div>
       </div>

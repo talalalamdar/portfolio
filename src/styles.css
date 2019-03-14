@@ -39,6 +39,10 @@ body {
     margin-bottom: 10px;
 }
 
+.editorial-text {
+    font-size: 50px;
+}
+
 #personal-details {
     margin-top: 30px;
 }
@@ -98,7 +102,8 @@ body {
     right: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white
+    color: white;
+    opacity: 0.7;
 }
 
 .personal-details-sidebar {
@@ -142,7 +147,6 @@ body {
 
 .content-item {
     width: 100%;
-    text-decoration: none;
 }
 
 .scrollactive-item {
@@ -254,5 +258,18 @@ body {
     }
     .scroll-spy-div {
         display: none;
+    }
+    .editorial-help-block {
+        display: none;
+    }
+    .editorial-text {
+        font-size: 20px;
+    }
+    .editorial-block {
+        top: 100px;
+        left: 15px;
+        right: 15px;
+        width: auto;
+        transform: none;
     }
 }
