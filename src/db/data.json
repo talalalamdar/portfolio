@@ -141,7 +141,7 @@
         "booksApp": {
             "name": "Books App",
             "description": "Books App, made using ReactJs, Redux, React-router, and Restful api fetching data from Google Books api: The ability to search books from Google Books api. Mark books. Preview books,",
-            "link": "https://github.com/talalalamdar/books-app"
+            "link": "https://talalalamdar-books-app.surge.sh"
         },
         "portfolio": {
             "name": "Portfolio",
