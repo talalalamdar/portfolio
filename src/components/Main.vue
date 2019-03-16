@@ -150,7 +150,7 @@
     >
       <img class="editorial-img" src="../assets/editorial.png" alt="editorialDiv">
       <div class="editorial-block">
-        <div class="editorial-text">“Hi! I'm Talal, Front End Developer.
+        <div v-cloak class="editorial-text">“Hi! I'm Talal, Thanks for checking my page!
           <br>Please feel free to contact me 😊”
         </div>
       </div>
