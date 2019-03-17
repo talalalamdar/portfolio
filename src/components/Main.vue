@@ -2,7 +2,7 @@
   <div>
     <div class="main-page" v-if="!editorialStatus">
       <SideBar :data="data"/>
-      <div class="details-div">
+      <div class="details-div" v-animate-css="'fadeIn'">
         <div class="tools-bar" style="width: 100%;margin-top: 20px">
           <eva-icon
             style="float: right; cursor: pointer; animation-delay: 0.8s"
@@ -142,7 +142,7 @@
       id="editorial-div"
       class="editorial-div"
       v-animate-css="'slideInDown'"
-      v-animate-css.click="'slideOutUp'"
+      v-animate-css.click="'slideOutDown'"
       style="animation-duration: 0.7s"
       v-cloak
       @click="handleEditorailClick()"
@@ -150,8 +150,7 @@
     >
       <img class="editorial-img" src="../assets/editorial.png" alt="editorialDiv">
       <div class="editorial-block">
-        <div v-cloak class="editorial-text">“Hi! I'm Talal, Thanks for checking my page!
-          <br>Please feel free to contact me 😊”
+        <div v-cloak class="editorial-text">“Hi! I'm Talal, Thanks for checking my page!”
         </div>
       </div>
       <span class="editorial-help-block">Click anywhere to continue</span>
