@@ -135,7 +135,7 @@
         </section>
       </div>
       <div @click="handleScrollTop()" class="scroll-top-div">
-        <eva-icon name="arrowhead-up" width="30px" height="30px" animation="pulse" fill="#2496f4"></eva-icon>
+        <eva-icon name="arrowhead-up" width="30px" height="30px" animation="pulse" fill="#ffffff"></eva-icon>
       </div>
     </div>
     <div

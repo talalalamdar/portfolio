@@ -199,6 +199,7 @@ body {
     cursor: pointer;
     border: 2px solid #2496f4;
     border-radius: 50%;
+    background-color: #2496f4;
 }
 
 .scroll-top-div:hover {
