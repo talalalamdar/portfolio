@@ -17,7 +17,7 @@
             "href": "https://www.github.com/talalalamdar"
         }
     },
-    "summary": "I am a Junior Web Developer, looking forward to gain more experience and continue building my career in this field. I am very eager to learn, ready to take on responsibilities to improve my skills and add value to your organization. In addition, I function very well within a team and I can also execute tasks on an individual basis when needed. ",
+    "summary": "I am a Junior Front-End Developer, looking forward to gain more experience and continue building my career in this field. I am very eager to learn, ready to take on responsibilities to improve my skills and add value to your organization. In addition, I function very well within a team and I can also execute tasks on an individual basis when needed. ",
     "education": {
         "hackYourFuture": {
             "startDate": "2017",
@@ -40,16 +40,14 @@
             "title": "Ilumy - Amsterdam",
             "subTitle": "Junior Front End Developer",
             "tasks": [
-                "Implementing fully new features for the app",
-                "Converting some old code components from AngularJs to ReactJs",
-                "Maintaining the platform",
-                "Designing multiple parts of it",
-                "Fixing different kind of bugs",
-                "Code reviews",
-                "Creating tools that enhance how users see and interact with the app in any browser",
-                "Problem-solving"
+                "Implementing fully new features for the app.",
+                "Converting some old code components from AngularJs to ReactJs.",
+                "Maintaining the platform.",
+                "Designing multiple parts of it.",
+                "Fixing different kind of bugs and code reviews.",
+                "Creating tools that enhance User Experience of the app in any browser."
             ],
-            "details": "Ilumy is a company located in the central of Amsterdam, it mainly prototypes new features for different clients. One of the most successful products we have, is Plek, Plek is platform to organize teams, departments within a company and organizations (digital workspace for teams), as a Junior Front-End Developer, I got to work mainly for Plek, I got different responsibilities, Such as: "
+            "details": "Ilumy is a company which mainly prototypes new features for different clients. One of the most successful products we have is Plek. It is platform to organize teams and departments within organizations (digital workspace for teams). As a Junior Front-End Developer, I worked mainly on below tasks: "
         },
         "artIstanbul": {
             "startDate": "2013",
@@ -108,10 +106,10 @@
     },
     "technicalSkills": [
         "Strong programming skills in: HTML, CSS, and  JavaScript.",
-        "Good working experience on different projects with different frameworks and libraries: React.js, AngularJS, React Native, Redux, Mobx, Typescript and Vue.js.",
+        "Working experience on different projects with different frameworks and libraries: React.js, AngularJS, React Native, Redux, Mobx, Typescript and Vue.js.",
         "Good understanding of Node.Js, MySQL, MongoDB, Mongoose, Express.js, and Git Commands.",
-        "A good understanding of Scrum and Agile methodology.",
-        "Good Experience with different debugging tools."
+        "Good understanding of Scrum and Agile methodology.",
+        "Experience with different debugging tools."
     ],
     "sections": [
         "Personal Details",
