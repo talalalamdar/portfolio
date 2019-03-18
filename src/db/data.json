@@ -128,22 +128,22 @@
         },
         "calendar": {
             "name": "Calendar",
-            "description": "Calendar built using ReactJs, moment.js (Adding , edit, and remove tasks)",
-            "link": "https://github.com/talalalamdar/calendar-react"
+            "description": "Simple calendar UI (Adding , edit, and remove tasks). Built using HTML, CSS, javaScript, ReactJs, moment.js, Bootstrap",
+            "link": "https://talalalamdar-calendar.surge.sh"
         },
         "meetingsApp": {
             "name": "Meetings App",
-            "description": "Meetings app using ReactJs, NodeJs, MongoDb, Mongoose, Express,and Typescript.",
+            "description": "Meetings app, built using HTML, CSS, JavaScript, ReactJs, NodeJs, MongoDb, Mongoose, Express,and Typescript.",
             "link": "https://github.com/talalalamdar/meetings-app"
         },
         "booksApp": {
             "name": "Books App",
-            "description": "Books App, made using ReactJs, Redux, React-router, and Restful api fetching data from Google Books api: The ability to search books from Google Books api. Mark books. Preview books,",
+            "description": "Books App fetching data from Google Books API: The ability to search books from Google Books api (Bookmark, preview book, or add to plan, reading list). Built using HTML, CSS, javaScript, ReactJs, Redux, React-router, Bootstrap, and Restful API",
             "link": "https://talalalamdar-books-app.surge.sh"
         },
         "portfolio": {
             "name": "Portfolio",
-            "description": "Is built using: VueJs, animate.css",
+            "description": "Is built using: HTML, CSS, JavaScript, VueJs, animate.css",
             "link": "https://github.com/talalalamdar/portfolio"
         }
     }

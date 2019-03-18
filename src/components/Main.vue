@@ -141,8 +141,8 @@
     <div
       id="editorial-div"
       class="editorial-div"
-      v-animate-css="'slideInDown'"
-      v-animate-css.click="'slideOutDown'"
+      v-animate-css="slideIn"
+      v-animate-css.click="slideOut"
       style="animation-duration: 0.7s"
       v-cloak
       @click="handleEditorailClick()"
@@ -150,8 +150,7 @@
     >
       <img class="editorial-img" src="../assets/editorial.png" alt="editorialDiv">
       <div class="editorial-block">
-        <div v-cloak class="editorial-text">“Hi! I'm Talal, Thanks for checking my page!”
-        </div>
+        <div v-cloak class="editorial-text">“Hi! I'm Talal, Thanks for checking my page!”</div>
       </div>
       <span class="editorial-help-block">Click anywhere to continue</span>
     </div>
@@ -170,7 +169,15 @@ export default {
   props: ["data"],
   data() {
     return {
-      editorialStatus: true
+      editorialStatus: true,
+      slideIn: {
+        classes: "slideInDown",
+        delay: 800
+      },
+      slideOut: {
+        classes: "slideOutDown",
+        delay: 10
+      }
     };
   },
   methods: {
