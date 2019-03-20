@@ -128,8 +128,18 @@
           <span class="details-header">Projects</span>
           <ul>
             <li v-for="project in data.projects" :key="project.name">
-              <a style="font-size: 18px;" :href="project.link">{{project.name}}</a>
+              <h6 style="font-size: 18px;font-weight: 600" :href="project.link">{{project.name}}</h6>
               <p class="details-paragraph">{{project.description}}</p>
+              <a
+                v-if="project.link"
+                class="project-link"
+                :href="project.link"
+              >See project</a>
+              <a
+                v-if="project.sourceCode"
+                class="project-link"
+                :href="project.sourceCode"
+              >Source code link </a>
             </li>
           </ul>
         </section>

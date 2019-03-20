@@ -96,7 +96,7 @@ body {
 .editorial-details {
     display: flex;
     flex-direction: row-reverse;
-    padding: 20px
+    padding: 40px
 }
 
 .editorial-help-block {
@@ -122,6 +122,7 @@ body {
     padding-right: 20px;
     text-align: left;
     background-color: #f1f1f1;
+    overflow: hidden;
 }
 
 .details-section {
@@ -153,6 +154,11 @@ body {
 
 .content-item {
     width: 100%;
+    transition: .2s;
+}
+
+.content-item:hover {
+    font-weight: bold;
 }
 
 .scrollactive-item {
@@ -167,6 +173,7 @@ body {
     margin-right: 10px;
     opacity: 0.5;
     cursor: pointer;
+    transition: opacity .3s
 }
 
 .social-media-logo:hover {
@@ -200,10 +207,26 @@ body {
     border: 2px solid #2496f4;
     border-radius: 50%;
     background-color: #2496f4;
+    transition: box-shadow .5s;
 }
 
 .scroll-top-div:hover {
-    box-shadow: 0 8px 6px -6px #2496f4;
+    box-shadow: 0 0px 0px 6px rgba(255, 255, 255, 0.5);
+}
+
+.project-link {
+    color: #2496f4;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    -webkit-transition: color .5s; /* For Safari 3.1 to 6.0 */
+    transition: color font-weight .3s;
+    margin: 5px;
+}
+
+.project-link:hover {
+    color: #195e97;
+    font-weight: 600;
 }
 
 @media print {
@@ -247,7 +270,6 @@ body {
     .sidebar {
         display: block;
         width: 100%;
-        margin-bottom: 20px;
     }
     .tools-bar {
         display: none;
@@ -257,8 +279,9 @@ body {
     }
     .details-div {
         width: 100%;
-        display: block;
+        display: inline-block;
         font-size: 14px !important;
+        padding-right: 40px;
     }
     .details-paragraph {
         font-size: 14px;
