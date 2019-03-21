@@ -8,6 +8,10 @@ body {
   background-size: cover;
 }
 
+h6 {
+    margin: 20px auto;
+}
+
 .main-page {
   display: flex;
   justify-content: center;
@@ -225,7 +229,8 @@ body {
 .project-link {
   color: #2496f4;
   text-decoration: none;
-  display: block;
+  display: flex;
+  max-width: 15%;
   font-size: 15px;
   -webkit-transition: color 0.5s; /* For Safari 3.1 to 6.0 */
   transition: color font-weight 0.3s;
