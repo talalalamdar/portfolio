@@ -145,16 +145,24 @@ body {
 }
 
 .active {
-  background-color: white;
+  border-left: 2px solid white;
   width: 100% !important;
-  color: #2496f4 !important;
-  padding: 10px;
-  border-radius: 4px;
+  width: 100%;
+  transition: padding-left border-left 3s;
+  padding-left: 10px;
+  font-weight: bold;
 }
 
 .content-item {
   width: 100%;
 }
+
+.content-item a {
+    width: 100% !important;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
 
 .scrollactive-item {
   text-decoration: none;
