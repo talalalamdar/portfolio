@@ -129,7 +129,7 @@
         },
         "calendar": {
             "name": "Calendar",
-            "description": "Simple calendar UI (Add, edit, and remove tasks). Built using HTML, CSS, javaScript, ReactJs, moment.js, Bootstrap",
+            "description": "Simple calendar UI (Add, edit, and remove tasks). Built using HTML, CSS, JavaScript, ReactJs, moment.js, Bootstrap",
             "link": "https://talalalamdar-calendar.surge.sh",
             "sourceCode": "https://github.com/talalalamdar/calendar-react"
         },
@@ -141,7 +141,7 @@
         },
         "booksApp": {
             "name": "Books App",
-            "description": "Books App fetching data from Google Books API: (Search books from Google Books api, Bookmark, preview book, add to plan, or reading list). Built using HTML, CSS, javaScript, ReactJs, Redux, React-router, Bootstrap, and Restful API",
+            "description": "Books App fetching data from Google Books API: (Search books from Google Books api, Bookmark, preview book, add to plan, or reading list). Built using HTML, CSS, JavaScript, ReactJs, Redux, React-router, Bootstrap, and Restful API",
             "link": "https://talalalamdar-books-app.surge.sh",
             "sourceCode": "https://github.com/talalalamdar/books-app"
         },
