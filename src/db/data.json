@@ -145,6 +145,12 @@
             "link": "https://talalalamdar-books-app.surge.sh",
             "sourceCode": "https://github.com/talalalamdar/books-app"
         },
+        "calculator": {
+            "name": "Calculator",
+            "description": "Simple calculator UI (Mobile App). Built using JavaScript and ReactNative",
+            "link": "",
+            "sourceCode": "https://github.com/talalalamdar/calculator-react-native"
+        },
         "portfolio": {
             "name": "Portfolio",
             "description": "Is built using: HTML, CSS, JavaScript, VueJs, and Animate.css",

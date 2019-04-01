@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="main-page" v-if="!editorialStatus">
+    <div class="main-page" >    <!-- v-if="!editorialStatus"  -->
       <SideBar :data="data"/>
-      <div class="details-div" v-animate-css="'fadeIn'">
+      <div class="details-div" v-animate-css="fadeIn">
         <div class="tools-bar" style="width: 100%;margin-top: 20px">
           <eva-icon
             style="float: right; cursor: pointer; animation-delay: 0.8s"
@@ -19,7 +19,7 @@
         <section
           id="personal-details"
           v-animate-css="'bounceInRight'"
-          style="animation-delay: 0.8s"
+          style="animation-delay: 1.2s"
           class="details-section"
         >
           <span class="details-header">Personal Details</span>
@@ -34,7 +34,7 @@
         <section
           id="summary"
           v-animate-css="'bounceInRight'"
-          style="animation-delay: 1s"
+          style="animation-delay: 1.6s"
           class="details-section"
         >
           <span class="details-header">Summary</span>
@@ -43,7 +43,7 @@
         <section
           id="experiences"
           v-animate-css="'bounceInRight'"
-          style="animation-delay: 1.3s"
+          style="animation-delay: 1.9s"
           class="details-section"
         >
           <span class="details-header">Experiences</span>
@@ -69,7 +69,7 @@
         <section
           id="education"
           v-animate-css="'bounceInRight'"
-          style="animation-delay: 1.6s"
+          style="animation-delay: 2.2s"
           class="details-section"
         >
           <span class="details-header">Education</span>
@@ -92,7 +92,7 @@
         <section
           id="languages"
           v-animate-css="'bounceInRight'"
-          style="animation-delay: 1.9s"
+          style="animation-delay: 2.5s"
           class="details-section"
         >
           <span class="details-header">Languages</span>
@@ -111,7 +111,7 @@
         <section
           id="technical-skills"
           v-animate-css="'bounceInRight'"
-          style="animation-delay: 2.2s"
+          style="animation-delay: 2.8s"
           class="details-section"
         >
           <span class="details-header">Technical Skills</span>
@@ -122,7 +122,7 @@
         <section
           id="projects"
           v-animate-css="'bounceInRight'"
-          style="animation-delay: 2.5s"
+          style="animation-delay: 3.1s"
           class="details-section"
         >
           <span class="details-header">Projects</span>
@@ -148,7 +148,7 @@
         <eva-icon name="arrowhead-up" width="30px" height="30px" animation="pulse" fill="#ffffff"></eva-icon>
       </div>
     </div>
-    <div
+    <!-- <div
       id="editorial-div"
       class="editorial-div"
       v-animate-css="slideIn"
@@ -163,7 +163,7 @@
         <div v-cloak class="editorial-text">“Hi! I'm Talal, Thanks for checking my page!”</div>
       </div>
       <span class="editorial-help-block">Click anywhere to continue</span>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -187,6 +187,10 @@ export default {
       slideOut: {
         classes: "slideOutDown",
         delay: 10
+      },
+      fadeIn: {
+        classes: "fadeIn",
+        delay: 1000
       }
     };
   },

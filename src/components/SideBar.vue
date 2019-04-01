@@ -1,12 +1,12 @@
 <template>
-  <div class="sidebar" v-animate-css="'fadeIn'">
+  <div class="sidebar" v-animate-css="fadeIn">
     <div style="display: flex; justify-content: center">
-      <div v-animate-css="'bounceInDown'" style="animation-delay: 0.5s" class="pic-container">
+      <div v-animate-css="'bounceInDown'" style="animation-delay: 1.5s" class="pic-container">
         <img class="profile-pic" src="../assets/profilePic.png" height="180" width="180">
       </div>
     </div>
     <div style="display: flex; justify-content: center; width: 100%">
-      <div v-animate-css="'flipInX'" class="personal-details-sidebar">
+      <div v-animate-css="'flipInX'" style="animation-delay: 2s" class="personal-details-sidebar">
         <span style="font-weight: bold">{{data.personalDetails.fullName}}</span>
         <br>
         <span style="font-size: 14px">{{data.personalDetails.position}}</span>
@@ -28,7 +28,7 @@
       </div>
     </div>
 
-    <div class="scroll-spy-div" v-animate-css="'flipInX'">
+    <div class="scroll-spy-div" v-animate-css="'flipInX'" style="animation-delay: 2s">
       <scrollactive active-class="active" bezier-easing-value=".5,0,.35,1">
         <li class="content-item" v-for="section in data.sections" :key="section">
           <a :href="getSectionId(section)" class="scrollactive-item">{{section}}</a>
@@ -42,6 +42,14 @@
 export default {
   name: "SideBar",
   props: ["data"],
+  data() {
+    return {
+      fadeIn: {
+        classes: "fadeIn",
+        delay: 1000
+      }
+    };
+  },
   methods: {
     getSectionId: function(section) {
       return `#${section
