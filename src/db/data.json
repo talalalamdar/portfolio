@@ -127,6 +127,12 @@
             "link": "",
             "sourceCode": "https://github.com/HackYourFuture/hyfer"
         },
+        "moviesApp": {
+            "name": "Movies App",
+            "description": "Movies App fetching data from The Movie DB API, Search movies from The Movie DB API, Bookmark, Add to plan, Rate a movie and see its average rating, reviews and similar movies. Trending, Latest, Upcoming, Now Playing, and top rated movies. Built using HTML, CSS, javaScript, ReactJs, Redux, React-router, Bootstrap, and Restful API and other libraries",
+            "link": "https://talalalamdar-movies-app.surge.sh",
+            "sourceCode": "https://github.com/talalalamdar/movies-app"
+        },
         "calendar": {
             "name": "Calendar",
             "description": "Simple calendar UI (Add, edit, and remove tasks). Built using HTML, CSS, JavaScript, ReactJs, moment.js, Bootstrap",
