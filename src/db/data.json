@@ -4,9 +4,7 @@
         "email": "talalalamdar@gmail.com",
         "phone": "+31-624-838866",
         "profilePic": "../assets/profilePic.png",
-        "position": "Junior Front End Developer",
-        "street": "Kloekhorststraat 32",
-        "postCode": "1104MT Amsterdam",
+        "position": "Front-End Developer",
         "location": "Amsterdam, The Netherlands",
         "linkedIn": {
             "icon": "../assets/Linkedin.png",
@@ -17,7 +15,7 @@
             "href": "https://www.github.com/talalalamdar"
         }
     },
-    "summary": "I am a Junior Front-End Developer, looking forward to gain more experience and continue building my career in this field. I am very eager to learn, ready to take on responsibilities to improve my skills and add value to your organization. In addition, I function very well within a team and I can also execute tasks on an individual basis when needed. ",
+    "summary": "I am a Front-End Developer, looking forward to gain more experience and continue building my career in this field. I am very eager to learn, ready to take on responsibilities to improve my skills and add value to your organization. In addition, I function very well within a team and I can also execute tasks on an individual basis when needed. ",
     "education": {
         "hackYourFuture": {
             "startDate": "2017",
@@ -34,11 +32,20 @@
         }
     },
     "experiences": {
+        "OneFit": {
+            "startDate": "2019",
+            "endDate": "Today",
+            "title": "OneFit - Amsterdam",
+            "subTitle": "Front End Developer",
+            "tasks": [
+            ],
+            "details": " "
+        },
         "Ilumy": {
             "startDate": "2018",
             "endDate": "2019",
             "title": "Ilumy - Amsterdam",
-            "subTitle": "Junior Front End Developer",
+            "subTitle": "Front End Developer",
             "tasks": [
                 "Implementing fully new features for the app",
                 "Converting some old code components from AngularJs to ReactJs",
@@ -106,8 +113,8 @@
     },
     "technicalSkills": [
         "Strong programming skills in: HTML, CSS, and  JavaScript.",
-        "Working experience on different projects with different frameworks and libraries: React.js, AngularJS, React Native, Redux, Mobx, Typescript and Vue.js.",
-        "Good understanding of Node.Js, MySQL, MongoDB, Mongoose, Express.js, and Git Commands.",
+        "Working experience on different projects with different frameworks and libraries: React.js, AngularJS, React Native, Redux, Mobx, Typescript, Sass, Vue.js and Vuex",
+        "Good understanding of Node.Js, MySQL, MongoDB, Mongoose, Express.js, Php, Laravel, Socket.io and Git",
         "Good understanding of Scrum and Agile methodology.",
         "Experience with different debugging tools."
     ],
@@ -121,8 +128,14 @@
         "Projects"
     ],
     "projects": {
+        "Chat app": {
+            "name": "Chat app",
+            "description": "Chat App built with NodeJs, Express, Socket.io, Vuejs, Javascript, Sass - Simple chat interface with rooms and some functionalities interface with 3 screens: - Sign up with userName - Select a room - start chatting with people in the room",
+            "link": "",
+            "sourceCode": "https://github.com/talalalamdar/Chat-App"
+        },
         "hyfer": {
-            "name": "Hyfer",
+            "name": "HYFER",
             "description": "Hyfer is an application where all HackYourFuture students can follow their course schedule and find an overview of their homework. It also provides insight for teachers, to verify which modules are taught. Finally, students can receive their train tickets and submit a P2P review of their classmates’ homework. Hyfer is built using [React.js, JavaScript, HTML, CSS, MySQL and NodeJs].",
             "link": "",
             "sourceCode": "https://github.com/HackYourFuture/hyfer"

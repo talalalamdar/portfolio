@@ -1,7 +1,10 @@
-body {
+html,body {
   font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 0.8px;
   margin: 0px;
+  width: 100vw;
+  height: 100vh;
   background-image: url("./assets/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12,6 +15,10 @@ h6 {
     margin: 20px auto;
 }
 
+ul {
+  padding-left: 20px;
+}
+
 .main-page {
   display: flex;
   justify-content: center;
@@ -19,7 +26,6 @@ h6 {
 }
 
 .sidebar {
-  float: left;
   background-color: #2496f4;
   width: 25%;
   height: auto;
@@ -28,7 +34,6 @@ h6 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border-radius: 4px;
   color: white;
   text-align: center;
 }
@@ -123,7 +128,7 @@ h6 {
 
 .details-div {
   width: 50%;
-  padding-right: 20px;
+  padding: 0 20px;
   text-align: left;
   background-color: #f1f1f1;
   overflow: hidden;
@@ -210,8 +215,8 @@ h6 {
   width: 50px;
   height: 50px;
   position: fixed;
-  bottom: 100px;
-  right: 150px;
+  bottom: 50px;
+  right: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -230,7 +235,6 @@ h6 {
   color: #2496f4;
   text-decoration: none;
   display: flex;
-  max-width: 15%;
   font-size: 15px;
   -webkit-transition: color 0.5s; /* For Safari 3.1 to 6.0 */
   transition: color font-weight 0.3s;
@@ -276,12 +280,13 @@ h6 {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 950px) {
   .main-page {
-    display: block;
+    flex-direction: column;
   }
+
   .sidebar {
-    display: block;
+    display: flex;
     width: 100%;
   }
   .tools-bar {
@@ -292,9 +297,7 @@ h6 {
   }
   .details-div {
     width: 100%;
-    display: inline-block;
     font-size: 14px !important;
-    padding-right: 40px;
   }
   .details-paragraph {
     font-size: 14px;

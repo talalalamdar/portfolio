@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div class="main-page" >    <!-- v-if="!editorialStatus"  -->
       <SideBar :data="data"/>
       <div class="details-div" v-animate-css="fadeIn">
@@ -27,8 +26,7 @@
             <li>{{data.personalDetails.fullName}}</li>
             <li>{{data.personalDetails.email}}</li>
             <li>{{data.personalDetails.phone}}</li>
-            <li>{{data.personalDetails.street}}</li>
-            <li>{{data.personalDetails.postCode}}</li>
+            <li>{{data.personalDetails.location}}</li>
           </ul>
         </section>
         <section
@@ -164,11 +162,9 @@
       </div>
       <span class="editorial-help-block">Click anywhere to continue</span>
     </div> -->
-  </div>
 </template>
 
 <script>
-import Vue from "vue";
 import SideBar from "./SideBar.vue";
 
 export default {
@@ -199,17 +195,30 @@ export default {
       /// logic
     },
     handleScrollTop() {
-      window.location.href = "#top";
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     },
     printPage() {
       window.print();
     },
     handleEditorailClick: function() {
-      setTimeout(() => {
-        this.editorialStatus = false;
-        document.location.href = "#top";
-      }, 700);
+        // this.editorialStatus = false;
+      // window.scrollTo({
+      //   top: 0,
+      //   behavior: 'smooth'
+      // });
     }
+  },
+
+  mounted() {
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }, 500)
   }
 };
 </script>
