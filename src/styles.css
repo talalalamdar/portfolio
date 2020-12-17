@@ -236,14 +236,11 @@ ul {
   text-decoration: none;
   display: flex;
   font-size: 15px;
-  -webkit-transition: color 0.5s; /* For Safari 3.1 to 6.0 */
-  transition: color font-weight 0.3s;
   margin: 5px;
 }
 
 .project-link:hover {
   color: #195e97;
-  font-weight: 600;
 }
 
 @media print {

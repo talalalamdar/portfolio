@@ -39,7 +39,7 @@
             "subTitle": "Front End Developer",
             "tasks": [
             ],
-            "details": " "
+            "details": "OneFit is a sports platform, it offers different kinds of memberships for members, so they can do sports in different gyms and studios across the country. As a Front-End Developer, I worked on implementing a plenty of new features in vanilla Javascript and Vue.js, fixing bugs, refactoring some legacy pages. I worked with different domains and products like Website, Partner Portal and the Admin tool."
         },
         "Ilumy": {
             "startDate": "2018",
@@ -112,9 +112,9 @@
         }
     },
     "technicalSkills": [
-        "Strong programming skills in: HTML, CSS, and  JavaScript.",
-        "Working experience on different projects with different frameworks and libraries: React.js, AngularJS, React Native, Redux, Mobx, Typescript, Sass, Vue.js and Vuex",
-        "Good understanding of Node.Js, MySQL, MongoDB, Mongoose, Express.js, Php, Laravel, Socket.io and Git",
+        "Strong programming skills in: HTML, CSS/Sass, and  JavaScript.",
+        "Working experience on different projects with different frameworks and libraries: React.js, AngularJS, React Native, Redux, Mobx, Typescript, Sass, Vue.js, Vuex, Apollo, GraphQl, and Rest APIs",
+        "Good understanding of Node.Js, MySQL, MongoDB, Mongoose, Express.js, Php, Laravel, Jenkins, Socket.io and Git",
         "Good understanding of Scrum and Agile methodology.",
         "Experience with different debugging tools."
     ],

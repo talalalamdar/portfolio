@@ -191,9 +191,6 @@ export default {
     };
   },
   methods: {
-    onSectionIntersecting(event, currentItem, lastActiveItem) {
-      /// logic
-    },
     handleScrollTop() {
       window.scrollTo({
         top: 0,
