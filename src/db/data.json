@@ -38,8 +38,15 @@
             "title": "OneFit - Amsterdam",
             "subTitle": "Front End Developer",
             "tasks": [
+                "Shipping new features using technologies like vanilla Javascript and VueJs",
+                "Feature ownership, making sure features are tested/QA'ed deployed to Production",
+                "Working closely with Backend engineers to deliver End to End features",
+                "Refactoring and designing some legacy pages",
+                "Fixing bugs and making sure the application perform its best",
+                "Enhancing the UI, pixel perfecting it and make sure my work is responsive and compatible with different browsers",
+                "Code reviews, and knowledge sharing sessions"
             ],
-            "details": "OneFit is a sports platform, it offers different kinds of memberships for members, so they can do sports in different gyms and studios across the country. As a Front-End Developer, I worked on implementing a plenty of new features in vanilla Javascript and Vue.js, fixing bugs, refactoring some legacy pages. I worked with different domains and products like Website, Partner Portal and the Admin tool."
+            "details": "OneFit is a platform that help members enjoy doing sports in different gyms and studios across the city, with different types of memberships that it offers to members. As a Front-End Developer, I worked mainly on the Website as well as different products and applications, like Partner Portal and the Admin tool. Working closely with designers and product managers, I worked mainly on below tasks:"
         },
         "Ilumy": {
             "startDate": "2018",
@@ -168,6 +175,12 @@
             "name": "Calculator",
             "description": "Simple calculator UI (Mobile App). Built using JavaScript and ReactNative",
             "link": "",
+            "sourceCode": "https://github.com/talalalamdar/calculator-react-native"
+        },
+        "FlappyBird": {
+            "name": "Flappy Bird",
+            "description": "Flappy Bird game for web, made with HTML, CSS, and Vanilla Javascript",
+            "link": "https://flappy-bird-web.on.fleek.co",
             "sourceCode": "https://github.com/talalalamdar/calculator-react-native"
         },
         "portfolio": {
