@@ -65,6 +65,7 @@ ul {
   position: absolute;
   height: 97%;
   width: 97%;
+  object-fit: cover;
   top: 2;
   left: 2;
 }
