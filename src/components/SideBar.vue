@@ -2,7 +2,7 @@
   <div class="sidebar" v-animate-css="fadeIn">
     <div style="display: flex; justify-content: center">
       <div v-animate-css="'bounceInDown'" style="animation-delay: 1.5s" class="pic-container">
-        <img class="profile-pic" src="../assets/profilePic.jpeg" height="180" width="180">
+        <img class="profile-pic" src="../assets/profilePic-2.jpeg" height="480" width="480">
       </div>
     </div>
     <div style="display: flex; justify-content: center; width: 100%">

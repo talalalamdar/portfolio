@@ -39,8 +39,8 @@ ul {
 }
 
 .pic-container {
+  border-radius: 2px;
   background-color: white;
-  border-radius: 50%;
   position: relative;
   width: 180px;
   height: 180px;
@@ -61,11 +61,10 @@ ul {
 }
 
 .profile-pic {
-  border-radius: 50%;
   position: absolute;
   height: 97%;
   width: 97%;
-  object-fit: cover;
+  object-fit: contain;
   top: 2;
   left: 2;
 }
@@ -154,15 +153,6 @@ ul {
   color: #2496f4;
 }
 
-.active {
-  border-left: 2px solid white;
-  width: 100% !important;
-  width: 100%;
-  transition: padding-left border-left 3s;
-  padding-left: 10px;
-  font-weight: bold;
-}
-
 .content-item {
   width: 100%;
 }
@@ -179,10 +169,20 @@ ul {
   width: 100%;
   color: white;
   line-height: 1.9;
-  transition: font-weight 0.2s;
+  transition: font-weight 0.2s, border 0.2s;
+  border-left: 2px solid transparent;
 }
 
 .scrollactive-item:hover {
+  border-left: 2px solid white;
+}
+
+.active {
+  border-left: 2px solid white;
+  width: 100% !important;
+  width: 100%;
+  transition: padding-left border-left 3s;
+  padding-left: 10px;
   font-weight: bold;
 }
 

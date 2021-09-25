@@ -3,7 +3,7 @@
         "fullName": "Talal Alamdar",
         "email": "talalalamdar@gmail.com",
         "phone": "+31-624-838866",
-        "profilePic": "../assets/profilePic.png",
+        "profilePic": "../assets/profilePic-2.jpeg",
         "position": "Front-End Developer",
         "location": "Amsterdam, The Netherlands",
         "linkedIn": {
@@ -32,9 +32,28 @@
         }
     },
     "experiences": {
+        "Channable": {
+            "startDate": "2021",
+            "endDate": "Today",
+            "title": "Channable - Amsterdam",
+            "subTitle": "Front End Developer",
+            "tasks": [
+                "Building new pages and components for the website, using technologies like React and GraphQl on the client- side, with Nextjs on the server-side and following a design system built with Styled-Components and following CDD methodology with reusable components.",
+                "Managing the website content using GraphCMS, and building new models and define apis structure that can be fetched and queried using Graphql-Apollo on the client side.",
+                "Working closely with stakeholders like marketing and support teams to build features that helps them, taking into account the best user experience, interactivity, scalability and making sure it’s mobile friendly.",
+                "Code reviews, Hackathons and knowledge sharing sessions.",
+                "Writing unit tests for components, using Test Library and Jest.",
+                "Writing documentation for features an components using tools like Storybook and Docusaurus.",
+                "Fixing bugs, and making sure the application and the website always up running with no issues",
+                "Enhancing the developer experience with maintaining the pipelines in git, and build processes with CI.",
+                "Enhancing the UI, pixel perfecting it and make sure my work is responsive and compatible with different browsers",
+                "Designing new features or re-design already existing components using tools like Figma."
+            ],
+            "details": "Channable is a marketing company, it provides a tool for feed management and PPC. As a Front-end Developer, I worked on their new website, by building new features, pages and reusable components. The site is statically rendered using NextJs on the server side, on the client side we used technologies like React, GraphQl, Styled-Components, Storybook, and using GrpahCMS to manage the content, we managed the builds and the environments through Vercel as hosting provider. Beside working on the website, I also did some work to the Channable tool. Which is a web app (SPA), built with EmberJs. Was working mainly on integration setup to start migrating the ember pages/components to technologies like React, which was successfully achieved and we built multiple pages and components, and building new design system from scratch for the new react app. My daily tasks:"
+        },
         "OneFit": {
             "startDate": "2019",
-            "endDate": "Today",
+            "endDate": "2021",
             "title": "OneFit - Amsterdam",
             "subTitle": "Front End Developer",
             "tasks": [
